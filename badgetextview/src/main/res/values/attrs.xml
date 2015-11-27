@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgerTextView">
+        <attr name="badgerTextColor" format="color|reference" />
+        <attr name="badgerTextSize" format="dimension|reference" />
+        <attr name="badgerBackgroundColor" format="color|reference" />
+        <attr name="badgerMargin" format="dimension|reference" />
+        <attr name="badgerPadding" format="dimension|reference" />
+    </declare-styleable>
+</resources>
