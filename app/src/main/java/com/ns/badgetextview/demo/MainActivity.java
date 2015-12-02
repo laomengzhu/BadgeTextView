@@ -1,8 +1,7 @@
 package com.ns.badgetextview.demo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
 
 import com.ns.badgetextview.BadgeTextView;
 

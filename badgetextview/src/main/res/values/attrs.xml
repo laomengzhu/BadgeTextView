@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="BadgerTextView">
-        <attr name="badgerTextColor" format="color|reference" />
-        <attr name="badgerTextSize" format="dimension|reference" />
-        <attr name="badgerBackgroundColor" format="color|reference" />
-        <attr name="badgerMargin" format="dimension|reference" />
-        <attr name="badgerPadding" format="dimension|reference" />
+    <declare-styleable name="BadgeTextView">
+        <!--徽章文字颜色-->
+        <attr name="badgeTextColor" format="color|reference" />
+        <!--徽章文字大小-->
+        <attr name="badgeTextSize" format="dimension|reference" />
+        <!--徽章背景色-->
+        <attr name="badgeBackgroundColor" format="color|reference" />
+        <!--徽章相对于控件的外边距-->
+        <attr name="badgeMargin" format="dimension|reference" />
+        <!--徽章内边距-->
+        <attr name="badgePadding" format="dimension|reference" />
     </declare-styleable>
 </resources>

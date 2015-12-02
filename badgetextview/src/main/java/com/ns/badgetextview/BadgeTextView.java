@@ -62,39 +62,39 @@ public class BadgeTextView extends TextView {
             badgerMargin = 0;
             badgerPadding = (int) (getResources().getDisplayMetrics().density * 8);
         } else {
-            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.BadgerTextView);
+            TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.BadgeTextView);
 
-            int resID = ta.getResourceId(R.styleable.BadgerTextView_badgerTextSize, -1);
+            int resID = ta.getResourceId(R.styleable.BadgeTextView_badgeTextSize, -1);
             if (resID == -1) {
-                badgerPaint.setTextSize(ta.getDimensionPixelSize(R.styleable.BadgerTextView_badgerTextSize, (int) getTextSize()));
+                badgerPaint.setTextSize(ta.getDimensionPixelSize(R.styleable.BadgeTextView_badgeTextSize, (int) getTextSize()));
             } else {
                 badgerPaint.setTextSize(getResources().getDimensionPixelSize(resID));
             }
 
-            resID = ta.getResourceId(R.styleable.BadgerTextView_badgerTextColor, -1);
+            resID = ta.getResourceId(R.styleable.BadgeTextView_badgeTextColor, -1);
             if (resID == -1) {
-                badgerTextColor = ta.getColor(R.styleable.BadgerTextView_badgerTextColor, getCurrentTextColor());
+                badgerTextColor = ta.getColor(R.styleable.BadgeTextView_badgeTextColor, getCurrentTextColor());
             } else {
                 badgerTextColor = getResources().getColor(resID);
             }
 
-            resID = ta.getResourceId(R.styleable.BadgerTextView_badgerBackgroundColor, -1);
+            resID = ta.getResourceId(R.styleable.BadgeTextView_badgeBackgroundColor, -1);
             if (resID == -1) {
-                badgerBgColor = ta.getColor(R.styleable.BadgerTextView_badgerBackgroundColor, Color.RED);
+                badgerBgColor = ta.getColor(R.styleable.BadgeTextView_badgeBackgroundColor, Color.RED);
             } else {
                 badgerBgColor = getResources().getColor(resID);
             }
 
-            resID = ta.getResourceId(R.styleable.BadgerTextView_badgerMargin, -1);
+            resID = ta.getResourceId(R.styleable.BadgeTextView_badgeMargin, -1);
             if (resID == -1) {
-                badgerMargin = ta.getDimensionPixelSize(R.styleable.BadgerTextView_badgerMargin, 0);
+                badgerMargin = ta.getDimensionPixelSize(R.styleable.BadgeTextView_badgeMargin, 0);
             } else {
                 badgerMargin = getResources().getDimensionPixelSize(resID);
             }
 
-            resID = ta.getResourceId(R.styleable.BadgerTextView_badgerPadding, -1);
+            resID = ta.getResourceId(R.styleable.BadgeTextView_badgePadding, -1);
             if (resID == -1) {
-                badgerPadding = ta.getDimensionPixelSize(R.styleable.BadgerTextView_badgerPadding, (int) (getResources().getDisplayMetrics().density * 8));
+                badgerPadding = ta.getDimensionPixelSize(R.styleable.BadgeTextView_badgePadding, (int) (getResources().getDisplayMetrics().density * 8));
             } else {
                 badgerPadding = getResources().getDimensionPixelSize(resID);
             }

@@ -21,10 +21,11 @@
         android:padding="10dp"
         android:text="纯文字演示"
         android:textColor="#000"
-        app:badgerBackgroundColor="#f00"
-        app:badgerPadding="4dp"
-        app:badgerTextColor="#fff"
-        app:badgerTextSize="12dp" />
+        app:badgeBackgroundColor="#f00"
+        app:badgeMargin="2dp"
+        app:badgePadding="6dp"
+        app:badgeTextColor="#fff"
+        app:badgeTextSize="12dp" />
 
     <View
         android:layout_width="match_parent"
@@ -42,10 +43,10 @@
         android:gravity="center"
         android:padding="10dp"
         android:textColor="#000"
-        app:badgerBackgroundColor="#f00"
-        app:badgerPadding="4dp"
-        app:badgerTextColor="#fff"
-        app:badgerTextSize="12dp" />
+        app:badgeBackgroundColor="#f00"
+        app:badgePadding="4dp"
+        app:badgeTextColor="#fff"
+        app:badgeTextSize="12dp" />
 
     <View
         android:layout_width="match_parent"
@@ -64,8 +65,8 @@
         android:padding="10dp"
         android:text="图文演示"
         android:textColor="#000"
-        app:badgerBackgroundColor="#f00"
-        app:badgerPadding="4dp"
-        app:badgerTextColor="#fff"
-        app:badgerTextSize="12dp" />
+        app:badgeBackgroundColor="#f00"
+        app:badgePadding="4dp"
+        app:badgeTextColor="#fff"
+        app:badgeTextSize="12dp" />
 </LinearLayout>
