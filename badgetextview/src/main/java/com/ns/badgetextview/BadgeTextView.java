@@ -16,7 +16,7 @@ import android.widget.TextView;
  */
 public class BadgeTextView extends TextView {
 
-    private int count = 0;
+    private int badgeCount = 0;
     private Paint badgerPaint;
     private int badgerBgColor, badgerTextColor;
     private int badgerMargin = 0, badgerPadding = 0;
@@ -103,7 +103,7 @@ public class BadgeTextView extends TextView {
         }
 
         if (isInEditMode()) {
-            count = 8;
+            badgeCount = 8;
         }
 
         textHeight = getTextHeight(badgerPaint);
@@ -114,9 +114,9 @@ public class BadgeTextView extends TextView {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        if (count > 0) {
+        if (badgeCount > 0) {
             badgerPaint.setTypeface(Typeface.DEFAULT);
-            String countStr = String.valueOf(count);
+            String countStr = String.valueOf(badgeCount);
             float textWidth = badgerPaint.measureText("88");
             float bgRadius = badgerPadding + textWidth / 2;
 
@@ -138,8 +138,8 @@ public class BadgeTextView extends TextView {
 
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setBadgeCount(int count) {
+        this.badgeCount = count;
         invalidate();
     }
 

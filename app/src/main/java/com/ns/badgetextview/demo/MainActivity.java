@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvText = (BadgeTextView) findViewById(R.id.tv_text);
-        tvText.setCount(8);
+        tvText.setBadgeCount(8);
 
         tvImage = (BadgeTextView) findViewById(R.id.tv_image);
-        tvImage.setCount(8);
+        tvImage.setBadgeCount(8);
 
         tvImageText = (BadgeTextView) findViewById(R.id.tv_image_text);
-        tvImageText.setCount(8);
+        tvImageText.setBadgeCount(8);
     }
 }
